@@ -1,0 +1,41 @@
+paths:
+  dataset_xlsx: "../data/数据集.xlsx"
+  svi_all_dir: "../data/SVIs（研究区域内全部）"
+  labeled_pano_dir: "../outputs/labeled_panos"
+  stitched_views_dir: "../outputs/stitched_views"
+  mllm_output_csv: "../outputs/mllm_predictions.csv"
+  supervised_output_dir: "../outputs/supervised"
+
+pano:
+  fov_deg: 90
+  out_size: 1024
+  pitch_deg: 0.0
+
+mllm:
+  model: "gpt-4.1-mini"
+  max_output_tokens: 200
+  temperature: 0.2
+  prompt_version: "baseline"
+
+mllm_groups:
+  baseline:
+    output_csv: "../outputs/mllm_baseline.csv"
+  local_prompt:
+    output_csv: "../outputs/mllm_local_prompt.csv"
+  anchor_prompt:
+    output_csv: "../outputs/mllm_anchor_prompt.csv"
+  rubric_prompt:
+    output_csv: "../outputs/mllm_rubric_prompt.csv"
+  explanatory_promoptA:
+    output_csv: "../outputs/mllm_explanatory_promoptA.csv"
+  explanatory_promoptB:
+    output_csv: "../outputs/mllm_explanatory_promoptB.csv"
+  explanatory_promoptC:
+    output_csv: "../outputs/mllm_explanatory_promoptC.csv"
+
+supervised:
+  test_size: 0.2
+  random_state: 42
+  cv_folds: 5
+  targets: ["CQ", "AQ", "HQ", "VQ"]
+  features: ["D_H", "EC", "EO", "VE", "PH", "WA", "NF", "GLR", "VC", "TDS", "TRS", "TWS"]

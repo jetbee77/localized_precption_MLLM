@@ -1,0 +1,1 @@
+python /Volumes/t7/python_file/LLM_SVIs_exp/svi_pipeline/scripts/mllm_perception.py --config /Volumes/t7/python_file/LLM_SVIs_exp/svi_pipeline/configs/default.yaml --output ../outputs/mllm_rubric_prompt.csv --prompt-version rubric_prompt
