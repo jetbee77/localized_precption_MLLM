@@ -12,7 +12,7 @@ pano:
   pitch_deg: 0.0
 
 mllm:
-  model: "gpt-4.1-mini"
+  model: "gpt-4.1"
   max_output_tokens: 200
   temperature: 0.2
   prompt_version: "baseline"
