@@ -58,10 +58,10 @@ python ./svi_pipeline/scripts/train_supervised_sizes.py \
 
 ### 8) 对比与可视化
 ```bash
-python /Volumes/t7/python_file/LLM_SVIs_exp/svi_pipeline/scripts/compare_and_plot.py \
-  --config /Volumes/t7/python_file/LLM_SVIs_exp/svi_pipeline/configs/default.yaml
+python ./svi_pipeline/scripts/compare_and_plot.py \
+  --config ./svi_pipeline/configs/default.yaml
 ```
-输出：`../outputs/supervised/plots/`
+输出：`./outputs/supervised/plots/`
 
 ### 9) 分布对比图（Human vs MLLM）
 ```bash
